@@ -1,0 +1,35 @@
+.report-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.report-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.report-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.report-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.report-button:hover {
+  background-color: #45a049;
+}
+
+.report-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

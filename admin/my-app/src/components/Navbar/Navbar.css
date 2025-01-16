@@ -1,0 +1,46 @@
+/* Navbar container */
+.navbar-container {
+  position: fixed; /* Fixes the navbar to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 60px; /* Height of the navbar */
+  background-color: #007bff; /* Primary color */
+  color: white;
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between brand and logout */
+  align-items: center; /* Center items vertically */
+  padding: 5px;
+}
+
+.navbar-title {
+  font-size: 20px; /* Larger font size for the title */
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer; /* Make the title clickable */
+  color: white;
+  text-decoration: none;
+}
+
+/* Logout button */
+.navbar-logout {
+  background-color: white;
+  color: #007bff; /* Primary color */
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px; /* Button padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 15px;
+  }
+
+  .navbar-logout {
+    margin-right: 30px;
+    font-size: 0.9rem;
+  }
+}

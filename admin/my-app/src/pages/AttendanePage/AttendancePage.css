@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+.attendance-page-container {
+  margin-top: 60px;
+  margin-left: 20%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 60px);
+  color: black;
+  width: 100%;
+}
+
+.attendance-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.selected-title {
+  color: #0056b3;
+}
+
+.select-container {
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.mark-attendance-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.attendance-section button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.attendance-section button:hover {
+  background-color: #0056b3;
+}
+
+.attendance-history table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.attendance-history th,
+.attendance-history td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: black;
+}
+
+.attendance-history th {
+  background-color: #f2f3ff;
+}
+
+.attendance-history td {
+  color: black;
+}

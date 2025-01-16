@@ -1,0 +1,104 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar-container {
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 60px; /* Set navbar height */
+  background-color: #007bff; /* Navbar background */
+  color: white;
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Horizontal padding */
+  z-index: 1100; /* Ensure it stays above the sidebar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Sidebar Container */
+.sidebar-container {
+  width: 20%; /* Default to 20% of screen width */
+  height: calc(100vh - 60px); /* Subtract navbar height */
+  position: fixed; /* Fixed to the left side */
+  top: 60px; /* Offset for navbar height */
+  left: 0; /* Align to the left */
+  background-color: #fff; /* Sidebar background */
+  border-right: 1px solid #e5e5e5; /* Sidebar border */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Scroll if content overflows */
+  z-index: 1000; /* Below navbar but above content */
+}
+
+/* Sidebar List */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar Item */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-right 0.3s ease;
+}
+
+/* Active Sidebar Item */
+.active-item {
+  background-color: #f2f3ff; /* Active background */
+  border-right: 4px solid #007bff; /* Highlight active item */
+}
+
+/* Sidebar Item Hover */
+.sidebar-item:hover {
+  background-color: #f9f9f9; /* Hover background */
+}
+
+/* Sidebar Text */
+.sidebar-item p {
+  margin: 0;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 60px; /* Offset for the navbar */
+  margin-left: 20%; /* Offset for the sidebar */
+  width: 80%; /* Remaining width */
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  height: calc(100vh - 60px); /* Full height minus navbar */
+  overflow-y: auto; /* Scrollable if content exceeds viewport */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height */
+    position: relative; /* No fixed positioning */
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5; /* Bottom border for smaller screens */
+  }
+
+  .main-content {
+    margin-left: 0; /* Remove sidebar offset */
+    width: 100%; /* Full width */
+    margin-top: 60px; /* Maintain navbar offset */
+  }
+}
