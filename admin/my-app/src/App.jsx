@@ -30,12 +30,12 @@ function App() {
       {/* Show Sidebar only if not on login */}
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
         <Route path="/employee-form" element={<EmployeeForm />} />
         <Route path="/employees-list" element={<EmployeeList />} />
         <Route path="/employees-attendance" element={<AttendancePage />} />
         <Route path="/employees-payroll" element={<PayrollPage />} />
-        <Route path = "/employees/reports" element = {<ReportComponent />} />
+        <Route path="/employees/reports" element={<ReportComponent />} />
       </Routes>
     </div>
   );
